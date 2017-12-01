@@ -1,0 +1,8 @@
+Command to build and optimize
+D:
+cd\My Code\js-retrospective\
+node build\r.js -o build\build.config.js
+
+git config --global user.email "knudehansen@gmail.com"
+  
+git config --global user.name "knudehansen-xx"
