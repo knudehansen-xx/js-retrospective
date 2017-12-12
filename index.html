@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task List</title>
+    <link rel="stylesheet" type="text/css" href="css/tasks.css">
+    <script src="js/require.js" data-main="js/main-optimized.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Retrospective</h1>
+    </header>
+
+    <div class="column">
+        <div class="toolbar">
+        <span><b>Good Things</b></span>
+        <img id="new-task-button" src="css/add-icon.png" alt="Add Icon" style="width:28px;height:28px;">
+        </div>
+
+        <div id="content">
+            <ul id="task-list">
+            </ul>
+
+            <ul id="log-list">
+            </ul>
+        </div>
+
+        <div class="toolbar">
+            <button id="save-button">Save</button>
+            <button id="cancel-button">Cancel</button>
+        </div>
+    </div>
+    <div class="column">
+        <h3>Bad Things</h3>
+    </div>
+    <div class="column">
+        <h3>Action Items</h3>
+    </div>
+</body>
+</html>
