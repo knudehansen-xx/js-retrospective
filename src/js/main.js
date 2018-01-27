@@ -1,7 +1,7 @@
 require.config({
     paths: {
-        jquery: 'jquery-2.1.1.min'
-        , templates: "../templates"
+        jquery: 'jquery-2.1.1.min',
+        bstrap: 'bootstrap.min'
     }
 });
 

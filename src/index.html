@@ -1,40 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Task List</title>
+    <title>Retrospective</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/tasks.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/require.js" data-main="js/main-optimized.min.js"></script>
 </head>
 
 <body>
-    <header>
+    <div class="jumbotron text-center">
         <h1>Retrospective</h1>
-    </header>
-
-    <div class="column">
-        <div class="toolbar">
-        <span><b>Good Things</b></span>
-        <img id="new-task-button" src="css/add-icon.png" alt="Add Icon" style="width:28px;height:28px;">
-        </div>
-
-        <div id="content">
-            <ul id="task-list">
-            </ul>
-
-            <ul id="log-list">
-            </ul>
-        </div>
-
-        <div class="toolbar">
-            <button id="save-button">Save</button>
-            <button id="cancel-button">Cancel</button>
-        </div>
+        <p>Please add your comments</p> 
     </div>
-    <div class="column">
-        <h3>Bad Things</h3>
-    </div>
-    <div class="column">
-        <h3>Action Items</h3>
+        
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h3>Good Things</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <img id="new-task-button" src="css/add-icon.png" alt="Add Icon" style="width:28px;height:28px;">
+                    </div>
+                </div>
+                <ul class="list-group" id="task-list"></ul>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4">
+                        <button id="save-button">Save</button>
+                    </div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                        <button id="cancel-button">Cancel</button>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h3>Bad Things</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <img id="new-badIdea-button" src="css/add-icon.png" alt="Add Icon" style="width:28px;height:28px;">
+                    </div>
+                </div>
+                <ul class="list-group" id="badIdea-list"></ul>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4">
+                        <button id="save-badIdea-button">Save</button>
+                    </div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                        <button id="cancel-badIdea-button">Cancel</button>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h3>Action Items</h3>        
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
