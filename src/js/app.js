@@ -12,18 +12,6 @@ define(["jquery", "tasks", "badIdeas"], function ($, tasks, badIdeas) {
         badIdeas.saveBadIdea();
     }
 
-    function _saveBadIdea() {
-        badIdeas.saveBadIdea();
-    }
-
-    function _cancelChanges() {
-        tasks.cancel();
-    }
-
-    function _cancelBadIdea() {
-        badIdeas.cancelBadIdea();
-    }
-
     function _deleteTask(clickEvent) {
         tasks.remove(clickEvent);
     }

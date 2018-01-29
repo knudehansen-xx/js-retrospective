@@ -5,13 +5,12 @@ define([], function() {
 
     function saveBadIdeaData (badIdeas) {
         localStorage.setItem(STORE_NAME, JSON.stringify(badIdeas));
-        alert("Saved: "+ JSON.stringify(badIdeas));
+        alert("BadIdeasSaved: "+ JSON.stringify(badIdeas));
     }
 
     function loadBadIdeaData () {
-        alert("In loadBadIdeaData");
         var storedBadIdeas = localStorage.getItem(STORE_NAME);
-        alert("Returned: "+ storedBadIdeas);
+        alert("BadIdeas Returned: "+ storedBadIdeas);
         if(storedBadIdeas) {
             return JSON.parse(storedBadIdeas);
         }

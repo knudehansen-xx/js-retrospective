@@ -16,15 +16,16 @@ define(["jquery", "renderers/badIdeaRenderer", "data/badIdeaData"], function ($,
             var $badIdea = $(badIdea);
             badIdeas.push({
                 complete: $badIdea.find(".complete").prop('checked'),
-                description: $badIdea.find(".description").val()
+                description: $badIdea.find(".description").val(),
+                createdDate: $badIdea.find(".created-date").val()
             });
         });
-
+        alert("saved");
         badIdeaData.saveBadIdea(badIdeas);
+        alert("leaving saved");
     }
 
     function cancelBadIdea() {
-        alert("In cancelBadIdea");
         badIdeaRenderer.renderBadIdeas();
     }
 

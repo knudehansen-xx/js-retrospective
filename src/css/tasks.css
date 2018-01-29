@@ -40,9 +40,10 @@ button {
     margin: 0;
 }
 
-.column {
-    float: left;
-    width: 33.33%;
+#actionItem-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Clear floats after the columns */
@@ -61,20 +62,6 @@ button {
     border: none;
 }
 
-.task .description {
-    width: 80%;
-    min-width: 150px;
-    min-height: 50px;
-    padding: .5em;
-    border: 1px solid;
-    word-wrap: break-word;
-}
-
-.task .created-date {
-    visibility: hidden;
-    width: 5px;
-}
-
 .badIdea {
     padding: .4em 1em;
     border-top: 1px dashed #444;
@@ -84,7 +71,21 @@ button {
     border: none;
 }
 
-.badIdea .description {
+.actionItem {
+    padding: .4em 1em;
+    border-top: 1px dashed #444;
+}
+
+.actionItem:first-child {
+    border: none;
+}
+
+.created-date {
+    visibility: hidden;
+    width: 5px;
+}
+
+.description {
     width: 80%;
     min-width: 150px;
     min-height: 50px;
