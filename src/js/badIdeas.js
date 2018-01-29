@@ -20,9 +20,7 @@ define(["jquery", "renderers/badIdeaRenderer", "data/badIdeaData"], function ($,
                 createdDate: $badIdea.find(".created-date").val()
             });
         });
-        alert("saved");
         badIdeaData.saveBadIdea(badIdeas);
-        alert("leaving saved");
     }
 
     function cancelBadIdea() {
