@@ -9,6 +9,7 @@ define(["jquery", "tasks", "badIdeas"], function ($, tasks, badIdeas) {
 
     function _saveChanges() {
         tasks.save();
+        badIdeas.saveBadIdea();
     }
 
     function _saveBadIdea() {
@@ -24,23 +25,18 @@ define(["jquery", "tasks", "badIdeas"], function ($, tasks, badIdeas) {
     }
 
     function _deleteTask(clickEvent) {
-        alert("In _deleteTask");
         tasks.remove(clickEvent);
     }
 
     function _deleteBadIdea(clickEvent) {
-        alert("In _deleteBadIdea");
         badIdeas.removeBadIdea(clickEvent);
     }
 
     function _registerEventHandlers() {
         $("#new-task-button").on("click", _addTask);
         $("#save-button").on("click", _saveChanges);
-        $("#cancel-button").on("click", _cancelChanges);
         $("#task-list").on("click", ".delete-button", _deleteTask);
         $("#new-badIdea-button").on("click", _addBadIdea);
-        $("#save-badIdea-button").on("click", _saveBadIdea);
-        $("#cancel-badIdea-button").on("click", _cancelBadIdea);
         $("#badIdea-list").on("click", ".delete-badIdea-button", _deleteBadIdea);
     }
 

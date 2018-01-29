@@ -11,7 +11,7 @@ define([], function() {
     function loadBadIdeaData () {
         alert("In loadBadIdeaData");
         var storedBadIdeas = localStorage.getItem(STORE_NAME);
-        alert("Returned: "+ JSON.stringify(storedBadIdeas));
+        alert("Returned: "+ storedBadIdeas);
         if(storedBadIdeas) {
             return JSON.parse(storedBadIdeas);
         }

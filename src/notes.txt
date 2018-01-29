@@ -6,3 +6,6 @@ node build\r.js -o build\build.config.js
 git config --global user.email "knudehansen@gmail.com"
   
 git config --global user.name "knudehansen-xx"
+
+Alerts:
+        alert("_renderTask.creatged-date: "+ $task.find(".created-date").val());

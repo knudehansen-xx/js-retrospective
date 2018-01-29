@@ -5,6 +5,7 @@ define([], function() {
 
     function saveTaskData (tasks) {
         localStorage.setItem(STORE_NAME, JSON.stringify(tasks));
+        alert("Saved: "+ JSON.stringify(tasks));
     }
 
     function loadTaskData () {

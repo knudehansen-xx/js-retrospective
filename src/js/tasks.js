@@ -20,7 +20,8 @@ define(["jquery", "data/taskData", "renderers/taskRenderer"], function ($, taskD
             var $task = $(task);
             tasks.push({
                 complete: $task.find(".complete").prop('checked'),
-                description: $task.find(".description").val()
+                description: $task.find(".description").val(),
+                createdDate: $task.find(".created-date").val()
             });
         });
 

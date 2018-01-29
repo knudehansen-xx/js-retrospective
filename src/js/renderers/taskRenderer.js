@@ -21,6 +21,10 @@ define(["jquery"], function ($) {
             $task.find(".complete").attr("checked", "checked");
         }
         $task.find(".description").val(task.description);
+        $task.find(".created-date").val(task.createdDate);
+        if($task.find(".created-date").val() == "") {
+           $task.find(".created-date").val(new Date().toJSON().slice(0,10).replace(/-/g,'/'));
+        }
         return $task;
     }
 
