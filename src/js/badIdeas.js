@@ -10,7 +10,6 @@ define(["jquery", "renderers/badIdeaRenderer", "data/badIdeaData"], function ($,
     }
 
     function saveBadIdea() {
-        alert("In saveBadIdea");
         var badIdeas = [];
         $("#badIdea-list .badIdea").each(function (index, badIdea) {
             var $badIdea = $(badIdea);

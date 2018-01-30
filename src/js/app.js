@@ -26,7 +26,7 @@ define(["jquery", "tasks", "badIdeas", "actionItems"], function ($, tasks, badId
     }
 
     function _deleteActionItem(clickEvent) {
-        badIactionItems.removeActionItem(clickEvent);
+        actionItems.removeActionItem(clickEvent);
     }
 
     function _registerEventHandlers() {
@@ -41,14 +41,10 @@ define(["jquery", "tasks", "badIdeas", "actionItems"], function ($, tasks, badId
 
     return {
         init: function () {
-            alert("in init");
             _registerEventHandlers();
             tasks.render();
-            alert("leaving render");
             badIdeas.renderBI();
-            alert("leaving renderBI");
             actionItems.renderAI();
-            alert("leaving renderAI");
         }
     }
 });

@@ -10,7 +10,6 @@ define(["jquery", "renderers/actionItemRenderer", "data/actionItemData"], functi
     }
 
     function saveActionItem() {
-        alert("In saveActionItem");
         var actionItems = [];
         $("#actionItem-list .actionItem").each(function (index, actionItem) {
             var $actionItem = $(actionItem);
@@ -20,16 +19,14 @@ define(["jquery", "renderers/actionItemRenderer", "data/actionItemData"], functi
                 createdDate: $actionItem.find(".created-date").val()
             });
         });
-        alert("saved");
         actionItemData.saveActionItem(actionItems);
-        alert("leaving saved");
     }
 
     function cancelActionItem() {
         actionItemRenderer.renderActionItems();
     }
 
-    function renderBI() {
+    function renderAI() {
         actionItemRenderer.renderActionItems(actionItemData.loadActionItemData());
     }
 

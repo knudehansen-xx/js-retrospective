@@ -5,12 +5,12 @@ define([], function() {
 
     function saveActionItemData (actionItems) {
         localStorage.setItem(STORE_NAME, JSON.stringify(actionItems));
-        alert("ActionItemsSaved: "+ JSON.stringify(actionItems));
+/*        alert("ActionItemsSaved: "+ JSON.stringify(actionItems));*/
     }
 
     function loadActionItemData () {
         var storedActionItems = localStorage.getItem(STORE_NAME);
-        alert("ActionItems Returned: "+ storedActionItems);
+/*        alert("ActionItems Returned: "+ storedActionItems);*/
         if(storedActionItems) {
             return JSON.parse(storedActionItems);
         }
