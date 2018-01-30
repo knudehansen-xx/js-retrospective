@@ -17,6 +17,12 @@ define(["jquery", "tasks", "badIdeas", "actionItems"], function ($, tasks, badId
         actionItems.saveActionItem();
     }
 
+    function _cancelChanges() {
+        tasks.render();
+        badIdeas.renderBI();
+        actionItems.renderAI();
+    }
+
     function _deleteTask(clickEvent) {
         tasks.remove(clickEvent);
     }
@@ -32,6 +38,7 @@ define(["jquery", "tasks", "badIdeas", "actionItems"], function ($, tasks, badId
     function _registerEventHandlers() {
         $("#new-task-button").on("click", _addTask);
         $("#save-button").on("click", _saveChanges);
+        $("#cancel-button").on("click", _cancelChanges);
         $("#task-list").on("click", ".delete-button", _deleteTask);
         $("#new-badIdea-button").on("click", _addBadIdea);
         $("#badIdea-list").on("click", ".delete-badIdea-button", _deleteBadIdea);
