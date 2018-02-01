@@ -1,5 +1,12 @@
 			
 
-//        if(task.created-date) {
-//           $task.find(".created-date").val(task.created-date);
-//        }
+    var taskTemplate = '<li class="task"><input class="complete" type="checkbox" />';
+    taskTemplate = taskTemplate + '<input class="description" type="textarea" placeholder="Enter a good thing"/>';
+    taskTemplate = taskTemplate + '<input class="created-date" type="text"/>';
+    taskTemplate = taskTemplate + '<img class="delete-button" src="css/delete-icon.png" alt="Delete Icon" style="width:28px;height:28px;"></li>';
+ 
+    var taskTemplate = '<li class="task"><div class="row"><div class="col-sm-1"><input class="complete" type="checkbox" /></div>';
+    taskTemplate = taskTemplate + '<div class="col-sm-9"><input class="description" type="textarea" placeholder="Enter a good thing"/></div>';
+    taskTemplate = taskTemplate + '<div class="col-sm-1"><input class="created-date" type="text"/></div>';
+    taskTemplate = taskTemplate + '<div class="col-sm-1"><img class="delete-button" src="css/delete-icon.png" alt="Delete Icon" style="width:28px;height:28px;"></div>'
+	taskTemplate = taskTemplate + '</div></li>';
