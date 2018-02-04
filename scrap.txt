@@ -1,12 +1,25 @@
 			
 
     var taskTemplate = '<li class="task"><input class="complete" type="checkbox" />';
-    taskTemplate = taskTemplate + '<input class="description" type="textarea" placeholder="Enter a good thing"/>';
+    taskTemplate = taskTemplate + '<textarea class="description" placeholder="Enter something that went well"/>';
     taskTemplate = taskTemplate + '<input class="created-date" type="text"/>';
     taskTemplate = taskTemplate + '<img class="delete-button" src="css/delete-icon.png" alt="Delete Icon" style="width:28px;height:28px;"></li>';
- 
-    var taskTemplate = '<li class="task"><div class="row"><div class="col-sm-1"><input class="complete" type="checkbox" /></div>';
-    taskTemplate = taskTemplate + '<div class="col-sm-9"><input class="description" type="textarea" placeholder="Enter a good thing"/></div>';
-    taskTemplate = taskTemplate + '<div class="col-sm-1"><input class="created-date" type="text"/></div>';
-    taskTemplate = taskTemplate + '<div class="col-sm-1"><img class="delete-button" src="css/delete-icon.png" alt="Delete Icon" style="width:28px;height:28px;"></div>'
-	taskTemplate = taskTemplate + '</div></li>';
+
+    min-width: 150px;
+    min-height: 50px;
+    
+    var badIdeaTemplate = '<li class="badIdea"><input class="complete" type="checkbox" />
+    <input class="description" type="textarea" placeholder="Enter a bad thing" />
+    <input class="created-date" type="text"/>
+    <img class="delete-badIdea-button" src="css/delete-icon.png" alt="Delete Icon" style="width:28px;height:28px;">
+    </li>';
+    var taskTemplate = '<li class="badIdea"><input class="complete" type="checkbox" />';
+    taskTemplate = taskTemplate + '<textarea class="description" placeholder="Enter something that did not go well"/>';
+    taskTemplate = taskTemplate + '<input class="created-date" type="text"/>';
+    taskTemplate = taskTemplate + '<img class="delete-button" src="css/delete-icon.png" alt="Delete Icon" style="width:28px;height:28px;"></li>';
+
+    var taskTemplate = '<li class="actionItem"><input class="complete" type="checkbox" />';
+    taskTemplate = taskTemplate + '<textarea class="description" placeholder="Enter an action item"/>';
+    taskTemplate = taskTemplate + '<input class="created-date" type="text"/>';
+    taskTemplate = taskTemplate + '<img class="delete-button" src="css/delete-icon.png" alt="Delete Icon" style="width:28px;height:28px;"></li>';
+

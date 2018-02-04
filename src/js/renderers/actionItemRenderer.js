@@ -1,6 +1,9 @@
 define(["jquery"], function ($) {
 
-    var actionItemTemplate = '<li class="actionItem"><input class="complete" type="checkbox" /><input class="description" type="textarea" placeholder="Enter an action item" /><input class="created-date" type="text"/><img class="delete-actionItem-button" src="css/delete-icon.png" alt="Delete Icon" style="width:28px;height:28px;"></li>';
+    var actionItemTemplate = '<li class="actionItem"><input class="complete" type="checkbox" />';
+    actionItemTemplate = actionItemTemplate + '<textarea class="description" placeholder="Enter an action item"/>';
+    actionItemTemplate = actionItemTemplate + '<input class="created-date" type="text"/>';
+    actionItemTemplate = actionItemTemplate + '<img class="delete-button" src="css/delete-icon.png" alt="Delete Icon" style="width:28px;height:28px;"></li>';
 
     function renderActionItems(actionItems) {
         var elementArray = $.map(actionItems, _renderActionItem);

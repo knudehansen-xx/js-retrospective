@@ -1,7 +1,7 @@
 define(["jquery"], function ($) {
 
     var taskTemplate = '<li class="task"><input class="complete" type="checkbox" />';
-    taskTemplate = taskTemplate + '<input class="description" type="textarea" placeholder="Enter a good thing"/>';
+    taskTemplate = taskTemplate + '<textarea class="description" placeholder="Enter something that went well"/>';
     taskTemplate = taskTemplate + '<input class="created-date" type="text"/>';
     taskTemplate = taskTemplate + '<img class="delete-button" src="css/delete-icon.png" alt="Delete Icon" style="width:28px;height:28px;"></li>';
 
