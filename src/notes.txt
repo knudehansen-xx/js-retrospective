@@ -17,14 +17,16 @@ git config --global user.name "knudehansen-xx"
 Virtualenv Commands:
 Once you have virtualenv installed, just fire up a shell and create your own environment. I usually create a project folder and a venv folder within:
 
-$ mkdir myproject
-$ cd myproject
-$ virtualenv venv
+> mkdir myproject
+> cd myproject
+> virtualenv venv
 New python executable in venv/bin/python
 Installing setuptools, pip............done.
 
-Run --> $ venv\Scripts\activate
-Stop --> $ deactivate
+Run --> venv\Scripts\activate
+Stop --> deactivate
+
+d:/NewCode/js-retrospective/venv/Scripts/python.exe d:\NewCode\js-retrospective\src\page-server.py
 
 Alerts:
         alert("_renderTask.creatged-date: "+ $task.find(".created-date").val());
