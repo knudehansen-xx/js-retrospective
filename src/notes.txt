@@ -1,3 +1,10 @@
+Start Page server:
+D:
+cd\My Code\js-retrospective\src\
+python.exe D:\NewCode\js-retrospective\src\page-server.py
+
+http://localhost:5000/
+
 Command to build and optimize
 D:
 cd\My Code\js-retrospective\
