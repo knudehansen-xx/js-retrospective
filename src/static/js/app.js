@@ -48,7 +48,6 @@ define(["jquery", "tasks", "badIdeas", "actionItems"], function ($, tasks, badId
 
     return {
         init: function () {
-            alert("In App init");
             _registerEventHandlers();
             tasks.render();
             badIdeas.renderBI();

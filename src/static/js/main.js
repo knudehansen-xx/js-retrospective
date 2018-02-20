@@ -6,6 +6,5 @@ require.config({
 });
 
 require(["app"], function (app) {
-    alert("In Main");
     app.init();
 });
