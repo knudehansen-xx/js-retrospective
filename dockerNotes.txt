@@ -1,0 +1,15 @@
+Docker Notes
+
+Based off of:
+https://www.linkedin.com/pulse/serve-static-files-from-docker-via-nginx-basic-example-arun-kumar/
+
+Commands for Docker Quickstart Terminal
+
+cd /d/NewCode/js-retrospective
+
+Build command:
+docker build -t js-retrospective .
+
+Run command:
+docker run -p 7000:90 js-retrospective
+
